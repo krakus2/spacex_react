@@ -11,7 +11,7 @@
     height: auto;
 }
 
-.header__backButton{
+.backButton{
   position: absolute;
   left: 50px;
   top: 40px;
@@ -26,13 +26,13 @@
   font-weight: 600;
 }
 
-.header__backButton:hover{
+.backButton:hover{
   cursor: pointer;
 }
 
-.header__backButton:focus {outline:0;}
+.ackButton:focus {outline:0;}
 
-.header__backButton__img{
+.backButton__img{
   position: absolute;
   top: 4px;
   left: 7px;
@@ -40,7 +40,7 @@
   width: auto;
 }
 
-.header__backButton__rectangle {
+.backButton__rectangle {
   height: 1px;
   width: 22px;
   background-color: var(--desert);
@@ -49,7 +49,7 @@
   left: 13px;
 }
 
-.header__backButton__text{
+.backButton__text{
   margin-left: 35px;
   position: absolute;
   top: -1px;

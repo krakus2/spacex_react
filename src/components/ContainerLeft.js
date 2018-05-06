@@ -62,7 +62,7 @@ class ContainerLeft extends Component {
             }
         </div>
         <div className="containerLeft__img">
-          <img src={this.props.launch.links.mission_patch_small} />
+          <img src={this.props.launch.links.mission_patch_small} alt="falcon_sign"/>
         </div>
       </div>
     );

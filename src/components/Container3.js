@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import '../styles/Container3.css'
 
 const Container3 = (props) => (
-  <div className="container__container2__container3">
+  <div className="container3">
           {Object.keys(props.names).map(elem => (
-            <div key={elem} className="container__container2__container3__row">
-              <span className="container__container2__container3__row__span">
+            <div key={elem} className="container3__row">
+              <span className="container3__row__span">
                 {elem}:
               </span>
               {props.names[elem]}

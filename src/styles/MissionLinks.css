@@ -24,7 +24,7 @@
   margin-bottom: 40px;
 }
 
-.missionLinks__buttonRow__button{
+.buttonRound{
   border-radius: 25px;
   width: 250px;
   height: 45px;
@@ -35,9 +35,9 @@
   font-size: 16px;
 }
 
-.missionLinks__buttonRow__button:focus {outline:0;}
+.buttonRound:focus {outline:0;}
 
-.missionLinks__buttonRow__button:hover {
+.buttonRound:hover {
     border: 1px solid var(--darkGrey);
     cursor: pointer;
 }

@@ -31,13 +31,13 @@ class ContainerRight extends Component {
         <Title title={"DETAILS"} />
         <Text text={this.props.launch.details} />
         <Title title={"ROCKET"} />
-        <div className="container__container2">
+        <div className="container2">
           <Container3 names={this.state.items1} />
           <Container3 names={this.state.items2} />
         </div>
         <Text text={this.props.rocket.description} />
         <Title title={"LAUNCH PAD"} />
-        <div className="container__container2">
+        <div className="container2">
           <Container3 names={this.state.items3} />
           <Container3 names={this.state.items4} />
         </div>

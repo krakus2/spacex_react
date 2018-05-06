@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Statistic } from 'semantic-ui-react'
-
 
 class Timer extends Component {
   constructor(props) {
@@ -83,9 +81,7 @@ class Timer extends Component {
 
   render() {
     return (
-      <div className="counter">
-              {this.timerLook(this.state.clock)}
-      </div>
+      this.timerLook(this.state.clock)
     );
   }
 }
