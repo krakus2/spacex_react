@@ -1,0 +1,57 @@
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: var(--almostBlack);
+  height: 100px;
+  position: relative;
+}
+
+.header__img{
+    width:300px; /* you can use % */
+    height: auto;
+}
+
+.header__backButton{
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  border: none;
+  background-color: transparent;
+  color: var(--desert);
+  display: flex;
+  flex-direction: row;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 600;
+}
+
+.header__backButton:hover{
+  cursor: pointer;
+}
+
+.header__backButton:focus {outline:0;}
+
+.header__backButton__img{
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  height: 11px; /* you can use % */
+  width: auto;
+}
+
+.header__backButton__rectangle {
+  height: 1px;
+  width: 22px;
+  background-color: var(--desert);
+  position: absolute;
+  top: 9px;
+  left: 13px;
+}
+
+.header__backButton__text{
+  margin-left: 35px;
+  position: absolute;
+  top: -1px;
+  width: 120px;
+}

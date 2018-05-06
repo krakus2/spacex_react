@@ -1,0 +1,10 @@
+.containerRight__title{
+  color: var(--desert);
+  border-bottom: var(--desert) 2px solid;
+  width: 100%;
+  letter-spacing: 9px;
+  font-weight: 600;
+  font-size: 17px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,24 @@
+.container__container2__container3{
+  border-left: 2px dotted var(--coolGrey);
+  padding-left: 25px;
+  padding-right: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  flex-grow: 1;
+
+}
+
+.container__container2__container3__row{
+  padding-bottom: 10px;
+  width: 20vw;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.container__container2__container3__row__span{
+  display: block;
+  color: #a7a9ac;
+  margin-right: 6px;
+}

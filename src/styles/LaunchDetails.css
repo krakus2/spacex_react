@@ -1,0 +1,15 @@
+:root {
+    --coolGrey: #a7a9ac;
+    --desert: #ccac5b;
+    --almostBlack: #0f1112;
+    --darkGrey: #22272b;
+    --brownishGrey: #666666;
+    --white: #ffffff;
+}
+
+
+.launchDetails{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}

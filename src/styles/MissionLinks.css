@@ -1,0 +1,43 @@
+.missionLinks{
+  width: 100vw;
+  background: url(../assets/rocket.png) no-repeat center center fixed;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 150px;
+
+}
+
+.missionLinks__text{
+  font-size: 40px;
+  letter-spacing: 30px;
+  font-weight: 600;
+  color: var(--white)
+}
+
+.missionLinks__buttonRow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.missionLinks__buttonRow__button{
+  border-radius: 25px;
+  width: 250px;
+  height: 45px;
+  margin: 50px 15px;
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+  font-size: 16px;
+}
+
+.missionLinks__buttonRow__button:focus {outline:0;}
+
+.missionLinks__buttonRow__button:hover {
+    border: 1px solid var(--darkGrey);
+    cursor: pointer;
+}
