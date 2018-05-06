@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.footer__footerLeft{
+.footerLeft{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -18,21 +18,21 @@
   width: 50%;
 }
 
-.footer__footerLeft__text{
+.footerLeft__text{
   margin-left: 100px;
   font-weight: 600;
   font-size: 20px;
   color: var(--brownishGrey)
 }
 
-.footer__footerLeft__line{
+.footerLeft__line{
   margin: 0 15px;
   font-weight: 600;
   font-size: 20px;
   color: var(--brownishGrey)
 }
 
-.footer__footerLeft__button{
+.buttonSocial{
   border: none;
   background-color: transparent;
   color: var(--coolGrey);
@@ -40,14 +40,14 @@
   font-size: 20px;
 }
 
-.footer__footerLeft__button:hover{
+.buttonSocial:hover{
   color: var(--brownishGrey);
   cursor: pointer;
 }
 
-.footer__footerLeft__button:focus {outline:0;}
+.buttonSocial:focus {outline:0;}
 
-.footer__footerRight{
+.footerRight{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
