@@ -1,8 +1,8 @@
-import { Component } from 'react';
+import React { Component } from 'react';
 import '../../styles/list/ListFilters.css'
 
 class ListFilters extends Component {
-  
+
   sieve = (e) => {
     this.props.sieve(e.target.name)
   }
