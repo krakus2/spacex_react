@@ -1,0 +1,19 @@
+.listContainerLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+  border-right: 2px dotted var(--brownishGrey);
+}
+
+/*.listContainerLeft:after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 5px;
+  height: 100px;
+  top: 10px;
+  left: 50%;
+  display: block;
+}*/

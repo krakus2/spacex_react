@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/ContainerLeft.css'
+import '../../styles/details/ContainerLeft.css'
 import format from 'date-fns/format'
 import compareAsc from 'date-fns/compare_asc'
 import Timer from './Timer'

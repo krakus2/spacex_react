@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Title.css'
+import '../../styles/details/Title.css'
 
 const Title = (props) => (
   <div className="containerRight__title">

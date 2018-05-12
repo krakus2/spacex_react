@@ -1,6 +1,6 @@
 .missionLinks{
   width: 100vw;
-  background: url(../assets/rocket.png) no-repeat center center fixed;
+  background: url(../../assets/rocket.png) no-repeat center center fixed;
   background-size: cover;
   height: 1000px;
   display: flex;
@@ -38,6 +38,7 @@
 .buttonRound:focus {outline:0;}
 
 .buttonRound:hover {
-    border: 1px solid var(--darkGrey);
+
+    box-shadow:inset 0 0 15px var(--white);
     cursor: pointer;
 }

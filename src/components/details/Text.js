@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Text.css'
+import '../../styles/details/Text.css'
 
 const Text = (props) => (
   <div className="containerRight__text">

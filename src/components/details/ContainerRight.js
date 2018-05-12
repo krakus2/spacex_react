@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/ContainerRight.css'
+import '../../styles/details/ContainerRight.css'
 import Title from './Title'
 import Text from './Text'
 import Container3 from './Container3'

@@ -21,7 +21,7 @@
 .footerLeft__text{
   margin-left: 100px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
   color: var(--brownishGrey)
 }
 
@@ -37,7 +37,7 @@
   background-color: transparent;
   color: var(--coolGrey);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .buttonSocial:hover{
@@ -55,6 +55,6 @@
   width: 50%;
   margin-right: 100px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 14px;
   color: var(--brownishGrey)
 }

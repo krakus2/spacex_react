@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.ackButton:focus {outline:0;}
+.backButton:focus {outline:0;}
 
 .backButton__img{
   position: absolute;

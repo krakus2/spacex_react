@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/Container3.css'
+import '../../styles/details/Container3.css'
 
 const Container3 = (props) => (
   <div className="container3">

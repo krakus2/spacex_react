@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/MissionLinks.css'
+import '../../styles/details/MissionLinks.css'
 
 class MissionLinks extends Component {
 

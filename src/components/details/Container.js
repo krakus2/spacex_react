@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Container.css'
+import '../../styles/details/Container.css'
 import ContainerRight from './ContainerRight'
 import ContainerLeft from './ContainerLeft'
 
