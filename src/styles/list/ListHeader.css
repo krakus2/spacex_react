@@ -27,14 +27,6 @@
   margin-top: 10px;
 }
 
-.list__header__buttonRow{
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 25px;
-}
-
 .buttonRound{
   border-radius: 25px;
   width: 150px;
