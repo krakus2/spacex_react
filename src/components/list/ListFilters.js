@@ -1,4 +1,4 @@
-import React { Component } from 'react';
+import React, { Component } from 'react';
 import '../../styles/list/ListFilters.css'
 
 class ListFilters extends Component {
