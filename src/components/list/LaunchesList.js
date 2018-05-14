@@ -6,13 +6,22 @@ import '../../styles/list/LaunchesList.css'
 
 class LaunchesList extends Component {
   state = {
-    launches: []
+    launches: [],
+    rockets: []
   }
 
   static getDerivedStateFromProps(nextProps, prevState){
     return{
-      launches: nextProps.launches
+      launches: nextProps.launches,
+      rockets: nextProps.launches.reduce( (rockets, elem) => {
+        rockets.indexOf(elem.rocket.rocket_name) === -1 && rockets.push(elem.rocket.rocket_name)
+        return rockets
+      }, [])
     }
+  }
+
+  dataToHeader = data => {
+    console.log()
   }
 
   sieve = (data) => {
@@ -28,10 +37,10 @@ class LaunchesList extends Component {
   }
 
   render() {
-    const { launches } = this.state
+    const { launches, rockets } = this.state
     return (
       <div className="listView">
-        <Header sieve={this.sieve}/>
+        <Header sieve={this.sieve} data={rockets} />
         <ListContainer
           launches={launches} onLaunchClick={this.props.onLaunchClick}/>
         <Footer />
