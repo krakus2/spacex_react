@@ -6,7 +6,7 @@ import rocket from './assets/rocket.json';
 import launches from './assets/launches.json';
 import LaunchDetails from './components/details/LaunchDetails';
 import LaunchesList from './components/list/LaunchesList';
-import { Transition } from 'react-spring'
+//import { Transition } from 'react-spring'
 
 class App extends Component {
   constructor(props) {
@@ -43,12 +43,12 @@ class App extends Component {
   }
 
   handleLaunchClick = () => {
-    console.log("switch")
+    //console.log("switch")
     this.setState({ viewName: 'details' });
   }
 
   handleBackClick = () => {
-    console.log("switch")
+    //console.log("switch")
     this.setState({ viewName: 'list' });
   }
 

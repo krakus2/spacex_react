@@ -22,10 +22,13 @@ class ListBrickLeft extends Component {
   }
 
   shortName = (data) => {
-    if(data.length > 29){
-      return `${data.slice(0, 26)}...`
+    //console.log(data, data.charAt(25) !== ' ')
+    if(data.length > 35 && data.charAt(31) !== ' '){
+      return `${data.slice(0, 32)}...`
+    } else if(data.length > 32) {
+        return `${data.slice(0, 31)}...`
     } else {
-      return data
+        return data
     }
   }
 
