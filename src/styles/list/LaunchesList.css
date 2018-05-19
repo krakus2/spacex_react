@@ -5,3 +5,12 @@
   flex-direction: column;
 
 }
+
+.list__loading{
+  background-color: var(--darkGrey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 650px);
+}
