@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-image: url(../../assets/moon.png); /*no-repeat center center fixed;*/
   background-repeat: no-repeat;
   background-position: center top;

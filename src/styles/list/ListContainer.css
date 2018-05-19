@@ -1,6 +1,6 @@
 .list__container{
   background-color: var(--darkGrey);
-  width: 100vw;
+  width: 100%;
   min-height: calc(100vh - 630px);
   margin: 0;
   padding: 20px 0 0 0;
