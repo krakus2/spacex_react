@@ -36,7 +36,7 @@
   position: absolute;
   top: 28px;
   left: 39.55vw/*-99px;*/
-}
+}A
 
 .listBrickLeft__date{
   display: flex;
@@ -56,6 +56,8 @@
   margin-bottom: 90px;
   font-size: 13px;
   text-transform: uppercase;
+  max-height: 20px;
+  overflow: hidden /*dlatego content sie chowa*/
 }
 
 .listBrickLeft__data__rocket{

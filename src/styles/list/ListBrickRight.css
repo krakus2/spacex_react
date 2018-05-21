@@ -54,6 +54,8 @@
   margin-bottom: 90px;
   font-size: 13px;
   text-transform: uppercase;
+  max-height: 20px;
+  overflow: hidden /*dlatego content sie chowa*/
 }
 
 .listBrickRight__data__rocket{
