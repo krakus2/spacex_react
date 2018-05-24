@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 45px;
+  margin-top: 85px;
 }
 
 .buttonRound{
@@ -18,6 +18,7 @@
   padding: 0 36px;
   letter-spacing: 0px;
   font-weight: 400;
+  white-space: nowrap
 }
 
 .buttonRound:focus {outline:0;}

@@ -21,14 +21,14 @@
 .footerLeft__text{
   margin-left: 80px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: var(--brownishGrey)
 }
 
 .footerLeft__line{
-  margin: 0 15px;
+  margin: 0 3px 0 15px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: var(--brownishGrey)
 }
 
@@ -37,7 +37,8 @@
   background-color: transparent;
   color: var(--coolGrey);
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 0 12px;
 }
 
 .buttonSocial:hover{
@@ -55,6 +56,6 @@
   width: 50%;
   margin-right: 80px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   color: var(--brownishGrey)
 }

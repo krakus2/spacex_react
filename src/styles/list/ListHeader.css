@@ -9,16 +9,17 @@
   background-position-y: 23%;
   background-position-x: 50%;
   background-attachment: fixed;
-  background-size:50%;
+  background-size:70%;
   background-color: var(--almostBlack);
-  height: 500px;
+  height: 700px;
   padding-top: 90px;
 }
 
 .list__header__img{
-    width:auto; /* you can use % */
-    height: 87px;
-    transform: translateX(40px);
+  width:auto; /* you can use % */
+  height: 87px;
+  transform: translateX(40px);
+
 }
 
 .list__header__text{
