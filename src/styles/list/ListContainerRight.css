@@ -1,9 +1,0 @@
-.listContainerRight{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 30%;
-  margin-left: 10%;
-  margin-top: 80px;
-}

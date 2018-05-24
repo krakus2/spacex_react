@@ -1,0 +1,19 @@
+.ListContainerBorder{
+  border-right: 2px dotted var(--brownishGrey);
+  height: calc(100% - 155px);
+  position:absolute;
+  top: 70px;
+}
+
+/*.ListContainerBorder{
+  margin: 0;
+  width: 0;
+  padding-top: 20px;
+  border-right: 2px dotted var(--brownishGrey);
+  left: 1px;
+  height: calc(100% - 130px);
+  width: 0;
+  position: absolute;
+  left: 50vw;
+  top: 40px;
+}*/

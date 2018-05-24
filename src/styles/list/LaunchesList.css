@@ -7,7 +7,7 @@
 }
 
 .list__loading{
-  background-color: var(--darkGrey);
+  background-color: var(--almostBlack);
   display: flex;
   flex-direction: row;
   justify-content: center;

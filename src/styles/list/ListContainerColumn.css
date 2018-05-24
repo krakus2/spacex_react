@@ -1,0 +1,16 @@
+.listContainerColumn{
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+}
+
+.listContainerColumn--left{
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.listContainerColumn--right{
+  margin-top: 80px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}

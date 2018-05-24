@@ -25,36 +25,43 @@ class LaunchesList extends Component {
   }*/
 
   sieve = (data) => {
-    console.log(data, `https://api.spacexdata.com/v2/launches/upcoming?rocket_id=${data}`)
+    console.log(data, `https://api.spacexdata.com/v2/launches/all?rocket_id=${data}`)
     this.setState({ loading: true, launches: [] })
-    //console.log(this.state.launches[0].rocket.rocket_name.toLowerCase())
-    /*const launches = [...this.props.launches]
-    if(data !== 'all rockets'){
-      const newResults = launches.filter(elem => elem.rocket.rocket_name.toLowerCase() === data)
-      this.setState({ launches: newResults})
-    } else {
-      this.setState({ launches })
-    }*/
+
     if(data !== "all rockets"){
-      fetch(`https://api.spacexdata.com/v2/launches/upcoming?rocket_id=${data}`, {
+      fetch(`https://api.spacexdata.com/v2/launches/all?rocket_id=${data}`, {
       	method: 'get'
       })
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         this.setState({ launches: [...data], loading: false, errors: {} })
       })
       .catch(err => this.setState({errors: { text: String(err)}, loading: false})  )
     } else {
-      fetch(`https://api.spacexdata.com/v2/launches/upcoming`, {
+      fetch(`https://api.spacexdata.com/v2/launches/all`, {
       	method: 'get'
       })
       .then(response => response.json())
       .then(data => {
+        console.log(data)
         this.setState({ launches: [...data], loading: false, errors: {} })
       })
       .catch(err => this.setState({errors: { text: String(err)}, loading: false}) )
     }
+  }
 
+  componentDidMount(){
+    this.setState({ loading: true, launches: [] })
+
+    fetch(`https://api.spacexdata.com/v2/launches/upcoming`, {
+      method: 'get'
+    })
+    .then(response => response.json())
+    .then(data => {
+      this.setState({ launches: [...data], loading: false, errors: {} })
+    })
+    .catch(err => this.setState({errors: { text: String(err)}, loading: false}) )
   }
 
   render() {

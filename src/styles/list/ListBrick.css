@@ -1,0 +1,136 @@
+.listBrick{
+  color: white;
+  position: relative;
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.listBrick--left{
+
+}
+
+.listBrick--right{
+  padding-left: 0;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.listBrick:hover{
+  cursor: pointer;
+}
+
+.listBrick__img{
+  position: absolute;
+  height: 11px; /* you can use % */
+  width: auto;
+  top: 30px;
+}
+
+.listBrick__img--left{
+  left: 43.5vw;
+  transform: rotate(180deg);
+}
+
+.listBrick__img--right{
+  left: -6.7vw;
+}
+
+.listBrick__arrowRectangle {
+  height: 2px;
+  background-color: var(--desert);
+  position: absolute;
+  top: 35px;
+  width: 117%;
+}
+
+.listBrick__arrowRectangle--left {
+}
+
+.listBrick__arrowRectangle--right {
+}
+
+.listBrick__circle {
+  height: 6px;
+  width: 6px;
+  background-color: var(--coolGrey);
+  border-radius: 50%;
+  position: absolute;
+  top: 33px;
+  z-index: 1000;
+}
+
+.listBrick__circle--left {
+  left: 46.47vw;
+}
+
+.listBrick__circle--right {
+  left: -9.44vw
+}
+
+.listBrick__date{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  max-height: 20px;
+  overflow: hidden; /*dlatego content sie chowa*/
+  margin-bottom: 10px;
+}
+
+.listBrick__date--left{
+  justify-content: flex-start;
+}
+
+.listBrick__date--right{
+  justify-content: flex-end;
+}
+
+.listBrick__data{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 90%;
+  height: 20px;
+}
+
+.listBrick__data--left{
+  justify-content: flex-start;
+}
+
+.listBrick__data--right{
+  justify-content: flex-end;
+}
+
+
+.listBrick__data__rocket{
+  color: var(--coolGrey);
+  margin-right: 5px;
+}
+
+.listBrick__data__launchSite{
+  color: var(--coolGrey);
+  margin-right: 5px;
+  white-space: nowrap;
+}
+
+.listBrick__data__rocket2{
+  white-space: nowrap;
+}
+
+.listBrick__data__launchSite2{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.listBrick__data__line{
+  color: var(--coolGrey);
+  margin: 0 10px;
+}

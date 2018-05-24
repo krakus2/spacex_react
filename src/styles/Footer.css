@@ -1,5 +1,5 @@
 .footer{
-  height: 150px;
+  height: 100px;
   width: 100%;
   background-color: var(--darkGrey);
   color: var(--coolGrey);
@@ -19,16 +19,16 @@
 }
 
 .footerLeft__text{
-  margin-left: 100px;
+  margin-left: 80px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--brownishGrey)
 }
 
 .footerLeft__line{
   margin: 0 15px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   color: var(--brownishGrey)
 }
 
@@ -37,7 +37,7 @@
   background-color: transparent;
   color: var(--coolGrey);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .buttonSocial:hover{
@@ -53,8 +53,8 @@
   justify-content: flex-end;
   align-items: center;
   width: 50%;
-  margin-right: 100px;
+  margin-right: 80px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--brownishGrey)
 }

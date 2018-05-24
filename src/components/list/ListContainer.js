@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../../styles/list/ListContainer.css'
-import ListContainerLeft from './ListContainerLeft'
-import ListContainerRight from './ListContainerRight'
+import ListContainerColumn from './ListContainerColumn'
+import ListContainerBorder from './ListContainerBorder'
 
 class ListContainer extends Component {
   state = {
@@ -20,8 +20,9 @@ class ListContainer extends Component {
     const { evenLaunches, oddLaunches} = this.state
     return (
       <div className="list__container">
-        <ListContainerLeft launches={evenLaunches} onLaunchClick={this.props.onLaunchClick}/>
-        <ListContainerRight launches={oddLaunches} onLaunchClick={this.props.onLaunchClick}/>
+        <ListContainerColumn launches={evenLaunches} onLaunchClick={this.props.onLaunchClick} mirrored={false}/>
+        <ListContainerBorder />
+        <ListContainerColumn launches={oddLaunches} onLaunchClick={this.props.onLaunchClick} mirrored={true}/>
       </div>
     );
   }
