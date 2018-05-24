@@ -21,27 +21,14 @@ class ListBrick extends Component {
     )
   }
 
-  /*shortNameLeft = (data) => {
-    //console.log(data, data.charAt(25) !== ' ')
-    if(data.length > 35 && data.charAt(31) !== ' '){
-      return `${data.slice(0, 32)}...`
-    } else if(data.length > 32) {
-        return `${data.slice(0, 31)}...`
+  formatName = data => {
+    const reg = /[0-9]+/;
+    if (reg.test(data.split(" ")[1])){
+      return data.toUpperCase().replace(" ", "")
     } else {
-        return data
+      return data.toUpperCase()
     }
   }
-
-  shortNameRight = (data) => {
-    //console.log(data, data.charAt(25) !== ' ')
-    if(data.length > 29 && data.charAt(25) !== ' '){
-      return `${data.slice(0, 26)}...`
-    } else if(data.length > 29) {
-        return `${data.slice(0, 25)}...`
-    } else {
-        return data
-    }
-  }*/
 
   render() {
     const { launch } = this.state
@@ -59,7 +46,7 @@ class ListBrick extends Component {
             ROCKET:
           </div>
           <div className="listBrick__data__rocket2">
-            {launch.rocket.rocket_name}
+            {this.formatName(launch.rocket.rocket_name)}
           </div>
           <div className="listBrick__data__line">
             |
