@@ -6,15 +6,18 @@ class ListFilters extends Component {
     rockets: ["falcon 1", "falcon 9", "falcon 10", "falcon heavy"]
   }
 
-  sieve = (e) => {
+  sieve = e => {
     this.props.sieve(e.target.name)
   }
 
-  /*static getDerivedStateFromProps(nextProps, prevState){
-    return{
-      rockets: nextProps.data
+  formatName = data => {
+    const reg = /[0-9]+/;
+    if (reg.test(data.split(" ")[1])){
+      return data.toUpperCase().replace(" ", "")
+    } else {
+      return data.toUpperCase()
     }
-  }*/
+  }
 
   render(){
     const { rockets } = this.state
@@ -22,7 +25,7 @@ class ListFilters extends Component {
         <div className="list__header__filters">
           <button className="buttonRound" name="all rockets" onClick={this.sieve}>ALL ROCKETS</button>
           {rockets.map(elem => (
-            <button className="buttonRound" key={elem} name={elem.toLowerCase().replace(" ", "")} onClick={this.sieve}>{elem.toUpperCase()}</button>
+            <button className="buttonRound" key={elem} name={elem.toLowerCase().replace(" ", "")} onClick={this.sieve}>{this.formatName(elem)}</button>
           ))}
         </div>
     )
