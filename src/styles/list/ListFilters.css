@@ -18,7 +18,8 @@
   padding: 0 36px;
   letter-spacing: 0px;
   font-weight: 400;
-  white-space: nowrap
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .buttonRound:focus {outline:0;}
