@@ -9,13 +9,13 @@
 .buttonRound{
   border-radius: 25px;
   width: auto;
-  height: 35px;
-  margin: 50px 10px;
+  height: 43px;
+  margin: 50px 12px;
   background-color: transparent;
   border: 1px solid var(--coolGrey);
   color: var(--coolGrey);
-  font-size: 15px;
-  padding: 0 25px;
+  font-size: 19px;
+  padding: 0 36px;
   letter-spacing: 0px;
   font-weight: 400;
 }
