@@ -19,7 +19,7 @@ class ListContainer extends Component {
   render() {
     const { evenLaunches, oddLaunches} = this.state
     return (
-      <div className="list__container">
+      <div className="listContainer">
         <ListContainerColumn launches={evenLaunches} onLaunchClick={this.props.onLaunchClick} mirrored={false}/>
         <ListContainerBorder />
         <ListContainerColumn launches={oddLaunches} onLaunchClick={this.props.onLaunchClick} mirrored={true}/>

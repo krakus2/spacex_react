@@ -6,6 +6,11 @@ import Footer from '../Footer'
 import '../../styles/details/LaunchDetails.css'
 
 class LaunchDetails extends Component {
+
+  componentDidMount(){
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="launchDetails">

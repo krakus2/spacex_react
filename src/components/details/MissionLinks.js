@@ -10,9 +10,9 @@ class MissionLinks extends Component {
           MISSION LINKS
         </span>
         <div className="missionLinks__buttonRow">
-          <button className="buttonRound">REDDIT CAMPAIGN</button>
-          <button className="buttonRound">PRESSKIT</button>
-          <button className="buttonRound">MISSION VIDEO</button>
+          <button className="buttonRound buttonRound--missionLinks">REDDIT CAMPAIGN</button>
+          <button className="buttonRound buttonRound--missionLinks">PRESSKIT</button>
+          <button className="buttonRound buttonRound--missionLinks">MISSION VIDEO</button>
         </div>
       </div>
     );

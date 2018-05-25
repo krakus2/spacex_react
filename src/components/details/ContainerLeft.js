@@ -60,6 +60,7 @@ class ContainerLeft extends Component {
               from={Math.round(this.state.milsecToLaunch/1000)}
               to={0} />
             }
+            <span> TO START</span>
         </div>
         <div className="containerLeft__img">
           <img src={this.props.launch.links.mission_patch_small} alt="falcon_sign"/>

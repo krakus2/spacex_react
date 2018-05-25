@@ -1,17 +1,17 @@
 .listBrick{
   color: white;
   position: relative;
-  width: 80%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .listBrick--left{
-
+  width: 86%;
 }
 
 .listBrick--right{
+  width: 80%;
   padding-left: 0;
   justify-content: flex-start;
   align-items: flex-end;
@@ -29,12 +29,12 @@
 }
 
 .listBrick__img--left{
-  left: 43.25vw;
+  left: 34.5vw;
   transform: rotate(180deg);
 }
 
 .listBrick__img--right{
-  left: -6.5vw;
+  left: -4.9vw;
 }
 
 .listBrick__arrowRectangle {
@@ -42,13 +42,15 @@
   background-color: var(--desert);
   position: absolute;
   top: 35px;
-  width: 117%;
+
 }
 
 .listBrick__arrowRectangle--left {
+  width: 107%;
 }
 
 .listBrick__arrowRectangle--right {
+  width: 115%;
 }
 
 .listBrick__circle {
@@ -62,20 +64,20 @@
 }
 
 .listBrick__circle--left {
-  left: 46.47vw;
+  left: 115.8%;/*37.55vw;*/
 }
 
 .listBrick__circle--right {
-  left: -9.44vw
+  left: -25.5%;/*-7.65vw*/
 }
 
 .listBrick__date{
   display: flex;
   flex-direction: row;
   width: 100%;
-  letter-spacing: 11px;
-  font-size: 19px;
-  font-weight: 400;
+  letter-spacing: 9px;
+  font-size: 14px;
+  font-weight: 00;
   max-height: 20px;
   overflow: hidden; /*dlatego content sie chowa*/
   margin-bottom: 10px;
@@ -95,7 +97,8 @@
   flex-direction: row;
   margin-top: 20px;
   margin-bottom: 100px;
-  font-size: 18px;
+  font-size: 14px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   width: 90%;
   height: 20px;
@@ -110,28 +113,28 @@
 }
 
 
-.listBrick__data__rocket{
+.listBrick__data-rocket{
   color: var(--coolGrey);
   margin-right: 5px;
 }
 
-.listBrick__data__launchSite{
+.listBrick__data-launchSite{
   color: var(--coolGrey);
   margin-right: 5px;
   white-space: nowrap;
 }
 
-.listBrick__data__rocket2{
+.listBrick__data-rocket2{
   white-space: nowrap;
 }
 
-.listBrick__data__launchSite2{
+.listBrick__data-launchSite2{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.listBrick__data__line{
+.listBrick__data-line{
   color: var(--coolGrey);
   margin: 0 10px;
 }

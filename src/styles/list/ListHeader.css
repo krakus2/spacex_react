@@ -1,4 +1,4 @@
-.list__header{
+.listHeader{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -6,26 +6,26 @@
   width: 100%;
   background-image: url(../../assets/moon.png); /*no-repeat center center fixed;*/
   background-repeat: no-repeat;
-  background-position-y: 23%;
+  background-position-y: 26%;
   background-position-x: 50%;
   background-attachment: fixed;
-  background-size:70%;
+  background-size:60%;
   background-color: var(--almostBlack);
-  height: 700px;
+  height: 660px;
   padding-top: 90px;
 }
 
-.list__header__img{
+.listHeader__img{
   width:auto; /* you can use % */
-  height: 87px;
-  transform: translateX(40px);
+  height: 72px;
+  transform: translateX(45px);
 
 }
 
-.list__header__text{
-  font-size: 29px;
-  letter-spacing: 22px;
+.listHeader__text{
+  font-size: 24px;
+  letter-spacing: 18px;
   font-weight: 400;
   color: var(--coolGrey);
-  margin-top: 23px;
+  margin-top: 30px;
 }

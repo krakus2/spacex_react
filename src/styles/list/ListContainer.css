@@ -1,8 +1,8 @@
-.list__container{
+.listContainer{
   background-color: var(--almostBlack);
   overflow: hidden;
   width: 100%;
-  min-height: calc(100vh - 830px);
+  min-height: calc(100vh - 790px);
   margin: 0;
   padding: 90px 0 0 0;
   display: flex;

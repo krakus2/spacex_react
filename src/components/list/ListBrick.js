@@ -45,16 +45,16 @@ class ListBrick extends Component {
           <div className="listBrick__data__rocket">
             ROCKET:
           </div>
-          <div className="listBrick__data__rocket2">
+          <div className="listBrick__data-rocket2">
             {this.formatName(launch.rocket.rocket_name)}
           </div>
-          <div className="listBrick__data__line">
+          <div className="listBrick__data-line">
             |
           </div>
-          <div className="listBrick__data__launchSite">
+          <div className="listBrick__data-launchSite">
             LAUNCH SITE:
           </div>
-          <div className="listBrick__data__launchSite2">
+          <div className="listBrick__data-launchSite2">
             {launch.launch_site.site_name_long}
           </div>
 

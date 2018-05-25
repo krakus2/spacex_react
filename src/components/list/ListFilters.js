@@ -22,10 +22,10 @@ class ListFilters extends Component {
   render(){
     const { rockets } = this.state
     return(
-        <div className="list__header__filters">
-          <button className="buttonRound" name="all rockets" onClick={this.sieve}>ALL ROCKETS</button>
+        <div className="filters">
+          <button className="buttonRound buttonRound--filters" name="all rockets" onClick={this.sieve}>ALL ROCKETS</button>
           {rockets.map(elem => (
-            <button className="buttonRound" key={elem} name={elem.toLowerCase().replace(" ", "")} onClick={this.sieve}>{this.formatName(elem)}</button>
+            <button className="buttonRound buttonRound--filters" key={elem} name={elem.toLowerCase().replace(" ", "")} onClick={this.sieve}>{this.formatName(elem)}</button>
           ))}
         </div>
     )

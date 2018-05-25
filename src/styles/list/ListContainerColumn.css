@@ -1,7 +1,7 @@
 .listContainerColumn{
   display: flex;
   flex-direction: column;
-  width: 47%;
+  width: 38%;
 }
 
 .listContainerColumn--left{
@@ -10,7 +10,7 @@
 }
 
 .listContainerColumn--right{
-  margin-top: 80px;
+  margin-top: 100px;
   justify-content: flex-start;
   align-items: flex-end;
 }

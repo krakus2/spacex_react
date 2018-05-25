@@ -10,9 +10,9 @@
 }
 
 .missionLinks__text{
-  font-size: 40px;
-  letter-spacing: 30px;
-  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 18px;
+  font-weight: 400;
   color: var(--white)
 }
 
@@ -26,14 +26,23 @@
 
 .buttonRound{
   border-radius: 25px;
-  width: 250px;
-  height: 45px;
-  margin: 50px 15px;
+  width: auto;
+  height: 35px;
+  margin: 50px 12px;
   background-color: transparent;
+  font-size: 14px;
+  padding: 0 31px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.buttonRound--missionLinks{
   border: 1px solid var(--white);
   color: var(--white);
-  font-size: 16px;
 }
+
 
 .buttonRound:focus {outline:0;}
 
