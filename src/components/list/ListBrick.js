@@ -42,7 +42,7 @@ class ListBrick extends Component {
         <div className={`listBrick__arrowRectangle ${mirrored ? 'listBrick__arrowRectangle--right' : 'listBrick__arrowRectangle--left'}`}></div>{/*modyfikator*/}
         <div className={`listBrick__circle ${mirrored ? 'listBrick__circle--right' : 'listBrick__circle--left'}`}></div>{/*modyfikator*/}
         <div className={`listBrick__data ${mirrored ? 'listBrick__data--right' : 'listBrick__data--left'}`}>
-          <div className="listBrick__data__rocket">
+          <div className="listBrick__data-rocket">
             ROCKET:
           </div>
           <div className="listBrick__data-rocket2">
