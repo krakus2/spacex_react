@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import '../../styles/list/ListFilters.css'
+import { observer, inject } from 'mobx-react';
 
+
+@inject("SpaceXStore")
+@observer
 class ListFilters extends Component {
   state = {
     rockets: ["falcon 1", "falcon 9", "falcon 10", "falcon heavy"]
   }
 
   sieve = e => {
-    this.props.sieve(e.target.name)
+    const { SpaceXStore } = this.props
+
+    SpaceXStore.filter(e.target.name)
   }
 
   formatName = data => {

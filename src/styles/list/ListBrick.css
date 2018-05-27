@@ -29,12 +29,12 @@
 }
 
 .listBrick__img--left{
-  left: 34.5vw;
+  left: 106.6%;
   transform: rotate(180deg);
 }
 
 .listBrick__img--right{
-  left: -4.9vw;
+  left: -15.9%;
 }
 
 .listBrick__arrowRectangle {

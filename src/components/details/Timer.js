@@ -5,27 +5,22 @@ class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      from: 0,//this.props.from - tak sie nie robi
-      to: 0,//this.props.to,
+      from: 0,
+      to: 0,
       clock: 0,
       isRunning: false,
-      counter: 0
     }
   }
 
     timer = () => {
-      let {from, to, isRunning, counter} = this.state
-      counter = counter + 0.1;
-      from = from - 0.1;
+      let {from, to, isRunning } = this.state
+      from = from - 1
       let clock = from - to;
-      clock = clock.toFixed(1)
       if(clock == 0){
-        //this.props.onSuccess();
         isRunning = false;
-        console.log("jestem zerem", clock)
         clearInterval(this.interval)
       }
-      this.setState({ from, clock, isRunning, counter })
+      this.setState({ from, clock, isRunning })
     }
 
     timerLook = (time) => {
@@ -47,18 +42,11 @@ class Timer extends Component {
         return `${days} DAYS ${hours} HOURS ${min} MINS`
     }
 
-    componentDidUpdate() {
-      let { counter, from, to } = this.state;
-      if(from){
-        var x = from - to;
-        if(x === counter){
-          //console.log("ze srodka ", counter)
+    componentDidMount() {
           clearInterval(this.interval)
           this.interval = setInterval(
             () => this.timer(),
             1000);
-        }
-      }
     }
 
     componentWillUnmount() {
@@ -69,7 +57,7 @@ class Timer extends Component {
     }
 
     static getDerivedStateFromProps(nextProps, prevState){
-      //console.log("getDerivedStateFromProps: ", nextProps, prevState)
+      console.log("getDerivedStateFromProps: ", nextProps, prevState)
       return {
         from: nextProps.from,
         to: nextProps.to,

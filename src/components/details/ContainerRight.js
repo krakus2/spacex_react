@@ -3,7 +3,12 @@ import '../../styles/details/ContainerRight.css'
 import Title from './Title'
 import Text from './Text'
 import Container3 from './Container3'
+import { observer, inject } from 'mobx-react';
+import { HashLoader } from 'react-spinners';
 
+
+@inject('SpaceXStore')
+@observer
 class ContainerRight extends Component {
   state = {}
 
@@ -25,23 +30,50 @@ class ContainerRight extends Component {
     }
   }
 
+  componentDidMount(){
+
+    const { SpaceXStore } = this.props
+    SpaceXStore.fetchLaunchSite()
+    console.log("ehjka", SpaceXStore.myLaunchSite)
+  }
+
   render() {
+    const { SpaceXStore } = this.props
+    const { rocketToRender, loadingDetails, items1, items2, items3, items4 } = this.props.SpaceXStore
     return (
       <div className="containerRight">
         <Title title={"DETAILS"} />
-        <Text text={this.props.launch.details} />
-        <Title title={"ROCKET"} />
-        <div className="container2">
-          <Container3 names={this.state.items1} />
-          <Container3 names={this.state.items2} />
-        </div>
-        <Text text={this.props.rocket.description} />
-        <Title title={"LAUNCH PAD"} />
-        <div className="container2">
-          <Container3 names={this.state.items3} />
-          <Container3 names={this.state.items4} />
-        </div>
-        <Text text={this.props.launchSite.details} />
+        <Text text={rocketToRender.details ? rocketToRender.details : "No details provided by SpaceX"} />
+        {loadingDetails &&
+          <div className="containerRight__detailsLoading">
+            <HashLoader
+              color={'#a7a9ac'}
+              loading={loadingDetails}
+              size={150}
+            />
+          </div>
+        }
+        { (!!Object.keys(SpaceXStore.myLaunchSite).length &&
+           !!Object.keys(SpaceXStore.myLaunchSite).length &&
+           !loadingDetails) && (
+             <div>
+               <Title title={"ROCKET"} />
+               <div className="container2">
+                 <Container3 names={items1} />
+                 <Container3 names={items2} />
+               </div>
+               <Text text={SpaceXStore.rocket ? SpaceXStore.rocket.description : "No rocket description provided by SpaceX"} />
+               <Title title={"LAUNCH PAD"} />
+               <div className="container2">
+                 <Container3 names={items3} />
+                 <Container3 names={SpaceXStore.items4} />
+               </div>
+               <Text text={SpaceXStore.myLaunchSite.details} />
+             </div>
+          )
+        }
+
+
       </div>
     );
   }

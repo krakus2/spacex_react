@@ -3,19 +3,10 @@ import '../../styles/list/ListContainerColumn.css'
 import ListBrick from './ListBrick'
 
 class ListContainerColumn extends Component {
-  state = {
-      launches: []
-  }
-
-  static getDerivedStateFromProps(nextProps, prevState){
-    return{
-      launches: nextProps.launches
-    }
-  }
-
   render() {
-    const { launches } = this.state
-    const { mirrored } = this.props
+    
+    const { launches, mirrored } = this.props
+
     return (
       <div className={`listContainerColumn ${mirrored ? 'listContainerColumn--right' : 'listContainerColumn--left'}`}>
         {launches.map( (elem, i) => (

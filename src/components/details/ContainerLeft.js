@@ -3,7 +3,10 @@ import '../../styles/details/ContainerLeft.css'
 import format from 'date-fns/format'
 import compareAsc from 'date-fns/compare_asc'
 import Timer from './Timer'
+import { observer, inject } from 'mobx-react';
 
+@inject('SpaceXStore')
+@observer
 class ContainerLeft extends Component {
 
   state = {
@@ -13,10 +16,12 @@ class ContainerLeft extends Component {
   }
 
   componentDidMount(){
+    const { rocketToRender } = this.props.SpaceXStore
     const dateNow = new Date()
-    const launchDate = this.props.launch.launch_date_unix
+    const launchDate = rocketToRender.launch_date_unix
     const dateNowMilsec = dateNow.getTime();
-    let milsecToLaunch = launchDate - dateNowMilsec;
+    let milsecToLaunch = launchDate*1000 - dateNowMilsec;
+    console.log(launchDate, dateNowMilsec)
     if(milsecToLaunch <= 0 ){
       milsecToLaunch = 0;
     }
@@ -46,24 +51,32 @@ class ContainerLeft extends Component {
 
   render() {
     const { milsecToLaunch } = this.state
+    const { rocketToRender } = this.props.SpaceXStore
     return (
       <div className="containerLeft">
         <div className="containerLeft__date">
           {this.state.dateFormat}
         </div>
         <div className="containerLeft__title">
-          {this.props.rocket.name.toUpperCase()} LAUNCH
+          {rocketToRender.rocket.rocket_name.toUpperCase()} LAUNCH
         </div>
         <div className="containerLeft__timer">
-          {milsecToLaunch === 0 ? "Rocket has been already launched" :
+          {milsecToLaunch <= 0 ? "Rocket has been already launched" :
             <Timer
               from={Math.round(this.state.milsecToLaunch/1000)}
               to={0} />
             }
-            <span> TO START</span>
+            {milsecToLaunch > 0 && <span> TO START</span> }
         </div>
-        <div className="containerLeft__img">
-          <img src={this.props.launch.links.mission_patch_small} alt="falcon_sign"/>
+        <div className="containerLeft__mission_patch">
+          {rocketToRender.links.mission_patch_small ?
+            <img className="mission_patch"
+              src={rocketToRender.links.mission_patch_small}
+              alt="falcon_sign"/> :
+              <img className="mission_patch--nasa"
+                src="https://www.nasa.gov/sites/default/files/images/nasaLogo-570x450.png"
+                alt="falcon_sign"/>
+          }
         </div>
       </div>
     );

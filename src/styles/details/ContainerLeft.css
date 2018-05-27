@@ -25,7 +25,11 @@
   font-size: 14px;
   font-weight: 400;
 }
-
-.containerLeft__img{
+.containerLeft__mission_patch{
   margin-top: 30px;
+}
+
+.mission_patch--nasa{
+  width: 65%;
+  height: auto;
 }
