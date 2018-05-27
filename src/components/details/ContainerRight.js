@@ -10,31 +10,9 @@ import { HashLoader } from 'react-spinners';
 @inject('SpaceXStore')
 @observer
 class ContainerRight extends Component {
-  state = {}
-
-  static getDerivedStateFromProps(nextProps, prevState){
-    return {
-      items1: {
-        NAME: nextProps.rocket.name, COMPANY: nextProps.rocket.company, HEIGHT: nextProps.rocket.height.meters,
-        DIAMETER: nextProps.rocket.diameter.meters, MASS: nextProps.rocket.mass.kg},
-      items2: {
-        "FIRST FLIGHT": nextProps.rocket.first_flight, COUNTRY: nextProps.rocket.country, "SUCCESS RATE": nextProps.rocket.success_rate_pct,
-        "COST PER LAUNCH": nextProps.rocket.cost_per_launch
-        },
-      items3: {
-        NAME: nextProps.launchSite.full_name
-      },
-      items4: {
-        LOCATION: `${nextProps.launchSite.location.name}, ${nextProps.launchSite.location.region}`
-      }
-    }
-  }
-
   componentDidMount(){
-
     const { SpaceXStore } = this.props
     SpaceXStore.fetchLaunchSite()
-    console.log("ehjka", SpaceXStore.myLaunchSite)
   }
 
   render() {

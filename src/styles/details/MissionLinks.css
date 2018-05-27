@@ -25,6 +25,8 @@
 }
 
 .buttonRound{
+  display: flex;
+  align-items: center;
   border-radius: 25px;
   width: auto;
   height: 35px;
@@ -36,6 +38,7 @@
   font-weight: 400;
   white-space: nowrap;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
 }
 
 .buttonRound--missionLinks{

@@ -40,12 +40,25 @@
   font-size: 14px;
   padding: 0 12px;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
 }
 
 .buttonSocial:hover{
   color: var(--brownishGrey);
   cursor: pointer;
 }
+
+/*.buttonSocial:active{
+  text-decoration: none;
+}
+
+.buttonSocial:visited{
+  text-decoration: none;
+}
+
+.buttonSocial:focus{
+  text-decoration: none;
+}*/
 
 .buttonSocial:focus {outline:0;}
 
