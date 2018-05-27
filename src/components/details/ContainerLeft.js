@@ -21,7 +21,7 @@ class ContainerLeft extends Component {
     const launchDate = rocketToRender.launch_date_unix
     const dateNowMilsec = dateNow.getTime();
     let milsecToLaunch = launchDate*1000 - dateNowMilsec;
-    console.log(launchDate, dateNowMilsec)
+    //console.log(launchDate, dateNowMilsec)
     if(milsecToLaunch <= 0 ){
       milsecToLaunch = 0;
     }

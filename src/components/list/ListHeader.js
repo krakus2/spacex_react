@@ -11,7 +11,7 @@ class ListHeader extends Component {
         <span className="listHeader__text">
           LAUNCHES 2018
         </span>
-        <ListFilters sieve={this.props.sieve} data={this.props.data}/>
+        <ListFilters />
       </div>
     )
   }

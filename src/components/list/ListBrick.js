@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../styles/list/ListBrick.css'
 import format from 'date-fns/format'
 import arrow_pointer from '../../assets/arrow_pointer.svg';
-import { observer, inject } from 'mobx-react';
+import { inject } from 'mobx-react';
 
 @inject('SpaceXStore')
 class ListBrick extends Component {
@@ -35,7 +35,7 @@ class ListBrick extends Component {
   showFlightNumber = () => {
     const { launch } = this.state
     const { SpaceXStore } = this.props
-    console.log("Numer tego lotu to " + launch.flight_number)
+    //console.log("Numer tego lotu to " + launch.flight_number)
     SpaceXStore.setRocketToRender(launch.flight_number)
     SpaceXStore.changeViewComponent("details")
   }

@@ -67,9 +67,6 @@ class SpaceXStore {
       this.view = <LaunchesList />
     } else if(data === "details"){
       this.view = <LaunchDetails
-        launch={launch} //launch={this.rocketToRender.launch}
-        launchSite={launchSite} //launch={this.rocketToRender.launchSite}
-        rocket={rocket} //launch={this.rocketToRender.rocket}
       />
     }
 }
@@ -139,7 +136,7 @@ class SpaceXStore {
     if(this.rocketToRender){
       Promise.all( [apiRequest1, apiRequest2] )
       .then(values => {
-        console.log(values)
+        //console.log(values)
         this.myLaunchSite = values[0]
         this.rocket = values[1]
         this.items1["NAME"] = this.rocket.name
@@ -159,26 +156,6 @@ class SpaceXStore {
         console.log(String(err))
       })
     }
-
-
-
-    /*if(this.rocketToRender){
-      fetch(`https://api.spacexdata.com/v2/launchpads/${this.rocketToRender.launch_site.site_id}`, {
-        method: 'get'
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        this.myLaunchSite = data
-        this.items4["LOCATION"] = `${this.myLaunchSite.location.name}, ${this.myLaunchSite.location.region}`
-        //this.errors = {}
-        this.loadingLaunchSite = false;
-      })
-      .catch(err => {
-        console.log(String(err))
-
-        })
-    }*/
   }
 
   @computed

@@ -12,7 +12,6 @@ class ListFilters extends Component {
 
   sieve = e => {
     const { SpaceXStore } = this.props
-
     SpaceXStore.filter(e.target.name)
   }
 

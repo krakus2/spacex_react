@@ -44,7 +44,7 @@ class ContainerRight extends Component {
                <Title title={"LAUNCH PAD"} />
                <div className="container2">
                  <Container3 names={items3} />
-                 <Container3 names={SpaceXStore.items4} />
+                 <Container3 names={items4} />
                </div>
                <Text text={SpaceXStore.myLaunchSite.details} />
              </div>
